@@ -28,7 +28,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .the-info > span {
   z-index: 2;
@@ -36,7 +36,7 @@
 .the-info > div {
   position: absolute;
   background-color: var(--orange);
-  width: 6.4rem;
+  width: 3rem;
   height: 80%;
   left: 8px;
   border-radius: 3rem;
@@ -98,10 +98,20 @@
   right: 3rem;
   top: 2rem;
   color: black;
-  background-color: white;
-  border: 2px solid yellowgreen;
+  background-color: var(--caloryCard);
+  border: 3px solid white;
+  border-radius: 3px;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  color: white;
+}
+.right-f > .btn:hover {
+  border-color: red;
+  background-color: var(--darkGrey);
+  color: var(--orange);
+  transform: translateY(-5px);
+  transition-duration: 1s;
 }
 .heart-rate {
   display: flex;
@@ -168,4 +178,84 @@
   color: white;
   font-size: 1.5rem;
   text-align: center;
+}
+.front-blur {
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .front {
+    flex-direction: column;
+  }
+  .front-blur {
+    width: 14rem;
+  }
+  .the-info {
+    margin-top: 0;
+    margin-left: 18%;
+    align-items: center;
+    font-size: small;
+    transform: scale(0.8);
+  }
+
+  .info-text {
+    font-size: xx-large;
+    align-items: center;
+  }
+  .info-text > div:nth-of-type(3) {
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .front-buttons {
+    justify-content: center;
+  }
+  .figures > div > span:nth-of-type(1) {
+    font-size: large;
+  }
+  .figures > div > span:nth-of-type(2) {
+    font-size: small;
+  }
+  .right-f {
+    position: relative;
+    background: none;
+  }
+  .right-f > .btn {
+    right: -0.5rem;
+    transform: scale(0.8);
+  }
+  .right-f > .btn:hover {
+    transform: scale(0.8);
+  }
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+  }
+  .calories {
+    position: relative;
+    transform: scale(0.8);
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+  .calories > img {
+    width: 1.5rem;
+  }
+  .calories > div > :nth-child(2) {
+    color: white;
+    font-size: 1rem;
+  }
+  .hero-image {
+    position: relative;
+    width: 15rem;
+    left: 9.5rem;
+    top: 4rem;
+    align-self: center;
+  }
+  .hero-image-back {
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
+  }
 }
