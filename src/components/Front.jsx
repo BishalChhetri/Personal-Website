@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "../Header/Header";
-import "./Front.css";
-import hero_image from "../../assets/hero_image.png";
-import hero_image_back from "../../assets/hero_image_back.png";
-import tick from "../../assets/tick.png";
-import Calories from "../../assets/calories.png";
+import Header from "./Header";
+import "../styles/Front.css";
+import hero_image from "../assets/hero_image.png";
+import hero_image_back from "../assets/hero_image_back.png";
+import tick from "../assets/tick.png";
+import Calories from "../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
+import { Link } from "react-scroll";
 
 const Front = () => {
   const transition = { type: "tween", duration: 3 };
@@ -80,8 +81,14 @@ const Front = () => {
         </div>
 
         <div className="front-buttons">
-          <button className="btn">Get Started</button>
-          <button className="btn">Learn More</button>
+          <button className="btn" onClick={() => window.location.reload(true)}>
+            Get Started
+          </button>
+          <button className="btn">
+            <Link to="projects" span="true" smooth="true">
+              Learn More
+            </Link>
+          </button>
         </div>
       </div>
 

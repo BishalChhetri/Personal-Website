@@ -1,4 +1,4 @@
-export const plansData = [
+export const projectsData = [
   {
     icon: (
       <svg

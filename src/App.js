@@ -1,18 +1,17 @@
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import Front from "./components/front/Front";
-import Join from "./components/Join/Join";
-import Project from "./components/projects/Project";
-import Reasons from "./components/Reasons/Reasons";
-import Skills from "./components/skills/Skills";
-import Testimonials from "./components/testimonials/Testimonials";
+import Footer from "./components/Footer";
+import Front from "./components/Front";
+import Join from "./components/Join";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
+
 function App() {
   return (
     <div className="App">
       <Front />
       <Project />
       <Skills />
-      <Reasons />
       <Testimonials />
       <Join />
       <Footer />

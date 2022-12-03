@@ -107,10 +107,22 @@
   color: white;
 }
 .right-f > .btn:hover {
+  border-color: var(--darkGrey);
+  background-color: var(--darkGrey);
+  color: var(--orange);
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(1px);
+  transition-duration: 3s;
+}
+.front-buttons > :nth-child(1):hover {
+  background-color: red;
+
+  transition-duration: 1s;
+}
+.front-buttons > :nth-child(2):hover {
   border-color: red;
   background-color: var(--darkGrey);
   color: var(--orange);
-  transform: translateY(-5px);
   transition-duration: 1s;
 }
 .heart-rate {

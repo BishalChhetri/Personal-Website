@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.css";
-import Bars from "../../assets/bars.png";
+import "../styles/Header.css";
+import Bars from "../assets/bars.png";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -60,11 +60,11 @@ const Header = () => {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
-              to="reasons"
+              to="testinomials"
               span="true"
               smooth="true"
             >
-              Why me?
+              Contact
             </Link>
           </li>
           <li>
@@ -74,7 +74,7 @@ const Header = () => {
               span="true"
               smooth="true"
             >
-              Contact
+              Connect
             </Link>
           </li>
         </ul>

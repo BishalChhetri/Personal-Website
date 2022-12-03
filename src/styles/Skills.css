@@ -4,6 +4,7 @@
   gap: 2rem;
   padding: 0 2rem;
 }
+
 .skills-header {
   display: flex;
   gap: 5rem;
@@ -32,7 +33,7 @@
   fill: white;
 }
 .category > :nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .category > :nth-child(3) {

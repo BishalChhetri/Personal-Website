@@ -22,29 +22,15 @@
   gap: 1rem;
 }
 .right-j {
-  display: flex;
-  justify-content: center;
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
   align-items: flex-end;
 }
-.email-container {
-  display: flex;
-  gap: 3rem;
-  background-color: gray;
-  padding: 1rem 2rem;
-}
-.email-container > input {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: var(--lightgray);
-}
-::placeholder {
-  color: var(--lightgray);
-}
-.btn-j {
-  background-color: var(--orange);
-  color: white;
-}
+/* .stroke-text {
+  color: orangered;
+} */
 
 @media screen and (max-width: 768px) {
   .Join {
@@ -57,5 +43,7 @@
   }
   .right-j {
     padding: 2rem;
+    font-size: large;
+    flex-direction: column;
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
-import "./Skills.css";
-import { programsData } from "../../data/programsData";
-import DownArrow from "../../assets/downArrow.png";
+import "../styles/Skills.css";
+import { workData } from "../data/workData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
@@ -14,11 +13,11 @@ const Skills = () => {
       </div>
 
       <div className="skills-categories">
-        {programsData.map((program, i) => (
+        {workData.map((work, i) => (
           <div className="category" key={i}>
-            {program.image}
-            <span>{program.heading}</span>
-            <span>{program.details}</span>
+            {work.image}
+            <span>{work.heading}</span>
+            <span>{work.details}</span>
             <FontAwesomeIcon icon={faAngleDoubleDown} className="join-now" />
           </div>
         ))}
