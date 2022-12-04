@@ -97,22 +97,18 @@
   position: absolute;
   right: 3rem;
   top: 2rem;
-  color: black;
-  background-color: var(--caloryCard);
-  border: 3px solid white;
+  background-color: var(--darkGrey);
+  border: 3px solid var(--darkGrey);
+  color: white;
   border-radius: 3px;
   padding-left: 2rem;
   padding-right: 2rem;
-
-  color: white;
 }
 .right-f > .btn:hover {
-  border-color: var(--darkGrey);
-  background-color: var(--darkGrey);
-  color: var(--orange);
   box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
   transform: translateY(1px);
   transition-duration: 3s;
+  color: orangered;
 }
 .front-buttons > :nth-child(1):hover {
   background-color: red;
