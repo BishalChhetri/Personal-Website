@@ -13,7 +13,6 @@ const Testimonials = () => {
 
   setTimeout(() => {
     setSendMessage(false);
-    setError(false);
   }, 5000);
 
   const handleChange = (event) => {
