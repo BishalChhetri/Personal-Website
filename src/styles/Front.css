@@ -98,7 +98,7 @@
   right: 3rem;
   top: 2rem;
   background-color: var(--darkGrey);
-  border: 3px solid var(--darkGrey);
+  border: 2px solid gray;
   color: white;
   border-radius: 3px;
   padding-left: 2rem;
@@ -108,6 +108,7 @@
   box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
   transform: translateY(1px);
   transition-duration: 3s;
+  border-color: orange;
   color: orangered;
 }
 .front-buttons > :nth-child(1):hover {
