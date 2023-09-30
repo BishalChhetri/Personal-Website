@@ -19,7 +19,7 @@ const Front = () => {
         <Header />
         <div className="the-info">
           <motion.div
-            initial={{ left: mobile ? "110px" : "113px" }}
+            initial={{ left: mobile ? "75px" : "113px" }}
             whileInView={{ left: "8px" }}
             transition={transition}
           ></motion.div>
