@@ -19,11 +19,11 @@ const Front = () => {
         <Header />
         <div className="the-info">
           <motion.div
-            initial={{ left: mobile ? "155px" : "200px" }}
+            initial={{ left: mobile ? "110px" : "113px" }}
             whileInView={{ left: "8px" }}
             transition={transition}
           ></motion.div>
-          <span> Full Stack Web Developer</span>
+          <span> Software Developer</span>
         </div>
 
         <div className="info-text">
@@ -32,12 +32,13 @@ const Front = () => {
             <span>Passionate</span>
           </div>
           <div>
-            <span>Web Developer </span>
+            <span>Software Developer </span>
           </div>
           <div>
             <span>
-              Developer with extensive experience in a variety of front end &
-              back end languages and databases.
+              Expertise in web development and substantial experience in Machine
+              Learning & Artificial Intelligence and keen interest in
+              cybersecurity.
             </span>
           </div>
         </div>
