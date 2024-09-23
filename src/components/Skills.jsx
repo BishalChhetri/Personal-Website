@@ -19,7 +19,7 @@ const Skills = () => {
             {work.image}
             <span>{work.heading}</span>
             <span>{work.details}</span>
-            {work.heading == "About" ? (
+            {work.heading === "About" ? (
               <div className="mt-5 flex items-center m-auto"></div>
             ) : (
               <Link
