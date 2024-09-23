@@ -38,7 +38,7 @@ const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn">Source Code</button>
+              <button className="btn">Live Demo</button>
             </a>
           </div>
         ))}

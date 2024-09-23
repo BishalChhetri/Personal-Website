@@ -3,6 +3,7 @@ import "../styles/Skills.css";
 import { workData } from "../data/workData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 const Skills = () => {
   return (
     <div className="skills" id="skills">
@@ -18,7 +19,21 @@ const Skills = () => {
             {work.image}
             <span>{work.heading}</span>
             <span>{work.details}</span>
-            <FontAwesomeIcon icon={faAngleDoubleDown} className="join-now" />
+            {work.heading == "About" ? (
+              <div className="mt-5 flex items-center m-auto"></div>
+            ) : (
+              <Link
+                onClick={() => {}}
+                to="testinomials"
+                span="true"
+                smooth="true"
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleDown}
+                  className="join-now"
+                />
+              </Link>
+            )}
           </div>
         ))}
       </div>

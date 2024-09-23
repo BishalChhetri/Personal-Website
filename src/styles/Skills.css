@@ -42,6 +42,7 @@
 }
 .join-now {
   font-size: 1.5rem;
+  margin-left: 45%;
 }
 .join-now:hover {
   cursor: pointer;
